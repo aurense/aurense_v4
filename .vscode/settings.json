@@ -11,5 +11,22 @@
   "yaml.schemas": {
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
   },
-  "eslint.useFlatConfig": true
+  "eslint.useFlatConfig": true,
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/vendor",
+      "title": "vendor"
+    },
+    {
+      "path": "[[workspace]]/src/pages"
+    },
+    {
+      "path": "[[workspace]]/src/data/post"
+    }
+  ],
+  "frontMatter.content.publicFolder": {
+    "path": "src/assets",
+    "relative": true
+  },
+  "frontMatter.git.enabled": true
 }

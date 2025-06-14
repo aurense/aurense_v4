@@ -1,183 +1,185 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'El Oro',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Guías Virtuales',
+          href: getPermalink('/'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Información General',
+          href: getPermalink('/'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Recomendaciones de Viaje',
+          href: getPermalink('/'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: '¿Comida?',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Pizza',
+          href: getPermalink('/'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Restaurantes',
+          href: getPermalink('/'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'Tacos',
+          href: getPermalink('/'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
+          text: 'Cocinas',
+          href: getPermalink('/'),
         },
         {
-          text: 'Contact',
-          href: getPermalink('/contact'),
+          text: 'Antojitos',
+          href: getPermalink('/'),
         },
         {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'Ver Todo',
+          href: getPermalink('/'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: '¿Diversión?',
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Eventos',
+          href: getPermalink('/'),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
+          text: 'Actividades',
+          href: getPermalink('/'),
         },
         {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
+          text: 'Bares',
+          href: getPermalink('/'),
         },
         {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Ver Todo',
+          href: getPermalink('/'),
         },
       ],
     },
     {
-      text: 'Blog',
+      text: '¿Descanso?',
       links: [
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
+          text: 'Hoteles',
+          href: getPermalink('/'),
         },
         {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          text: 'Posadas',
+          href: getPermalink('/'),
         },
         {
-          text: 'Article (with MDX)',
+          text: 'Habitaciones',
+          href: getPermalink('/'),
+        },
+        {
+          text: 'Cabañas',
+          href: getPermalink('/'),
+        },
+        {
+          text: 'Ver Todo',
+          href: getPermalink('/'),
+        },
+      ],
+    },
+    {
+      text: '¿Chisme?',
+      links: [
+        {
+          text: 'Actualidad',
           href: getPermalink('markdown-elements-demo-post', 'post'),
         },
         {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
+          text: 'Política y Gobierno',
+          href: getPermalink('politica', 'tag'),
         },
         {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          text: 'Comunidades',
+          href: getPermalink('comunidades', 'tag'),
+        },
+        {
+          text: 'Deportes',
+          href: getPermalink('deportes', 'tag'),
+        },
+        {
+          text: 'Cultura',
+          href: getPermalink('cultura', 'tag'),
+        },
+        {
+          text: 'Todas las Noticias',
+          href: getPermalink('noticias', 'category'),
         },
       ],
     },
     {
-      text: 'Widgets',
+      text: '¿Algo más?',
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Donativos', href: 'https://ko-fi.com/S6S81AWJT0', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Divulgación',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Actualidad', href: '#' },
+        { text: 'Análisis', href: '#' },
+        { text: 'Vida cotidiana', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Directorio',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Turismo', href: '#' },
+        { text: 'Alimentos y Bebidas', href: '#' },
+        { text: 'Comercios', href: '#' },
+        { text: 'Servicios', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Oportunidades',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Opciones de autoempleo', href: '#' },
+        { text: 'Laptops a bajo costo', href: '#' },
+        { text: 'Servicios Profesionales', href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Identidad',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: '¿Aurense?', href: '#' },
+        { text: 'Nuestro Equipo', href: '#' },
+        { text: 'Impacto Social', href: '#' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Términos y Condiciones', href: getPermalink('/terms') },
+    { text: 'Política de Privacidad', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://youtube.com/@aurensemx/' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/aurensemx/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/aurensemx/' },
+    { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: 'https://tiktok.com/@aurensemx/' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://aurense.com/favicon/favicon-32x32.png" alt="aurense logo" loading="lazy"></img>
+    Desde El Oro, producto 100% <a class="text-blue-600 underline dark:text-muted" href="https://aurense.com/"> Aurense</a> · All rights reserved.
   `,
 };
